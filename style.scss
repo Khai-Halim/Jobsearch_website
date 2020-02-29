@@ -1,0 +1,66 @@
+@import "variables";
+
+
+
+
+/*************************  Reset styles  *************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header-1{
+    background: #f3f3f3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+#nav-1{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    
+    ul{
+        
+        
+        li{
+            display: inline-block;
+            a{
+                display: block;
+                padding: 10px 0;
+                margin: 0 18px;
+                text-decoration: none;
+                color: $black;
+            }
+        }  
+    }
+}
+
+#region{
+    
+    ul{
+        text-align: right;
+        li{
+            display: inline-block;
+            a{
+                text-decoration: none;
+                color: $black;
+            }
+            &:first-child{
+                margin-right: 12px;
+            }
+            
+        }
+    }
+    
+}
