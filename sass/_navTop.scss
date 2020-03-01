@@ -1,3 +1,4 @@
+/*********************** Navigation - main - top ***************************/
 #header-1{ 
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,7 @@
                 padding: 8px 0;
                 margin: 0 18px;
                 text-decoration: none;
-                color: $black;
+                color:$black;
                 word-spacing: 0.05rem;
                 letter-spacing: 0.03rem;
                 
@@ -67,9 +68,7 @@
                             color: $black;
                         }      
                 }
-            }
-            
+            } 
         }
-    }
-    
+    } 
 }

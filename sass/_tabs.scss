@@ -1,0 +1,25 @@
+#tabs{
+    ul{
+        display: flex;      
+        li{
+            display: flex;
+            flex: 1;
+            &:first-child{
+                background: $blue;
+                a{
+                    color: $white;
+                }
+                
+            }  
+            a{
+                display: flex;
+                justify-content: center;
+                flex: 1;
+                text-decoration: none;
+                padding: 15px 0;         
+                color: $black; 
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
