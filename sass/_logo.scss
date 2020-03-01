@@ -3,12 +3,14 @@
 #header-2{
     display: flex;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 #logo{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     cursor: pointer;
     img{
         height: 50px;

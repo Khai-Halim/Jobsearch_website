@@ -1,0 +1,48 @@
+
+#search{
+    padding: 30px 20px;
+    form{  
+        display: flex;
+        align-items: flex-end;
+        span{
+            color: $white;
+        }
+    }
+}
+
+#keywords{
+        flex: 2;
+        span{
+            font-weight: bold;
+        }
+    margin-right: 4px;
+}
+
+#classification{
+    flex: 2;
+    margin-right: 4px;
+    cursor: pointer;
+    option{
+        &:first-child{
+            display: none;
+        }
+    }
+}
+
+#suburb{
+    flex: 2;
+    span{
+        font-weight: bold;
+    } 
+}
+
+.btn-1{
+    flex: 0.5;
+    padding: 12px;
+    background: $pink-2;
+    color: $white;
+    max-height: 50px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    cursor: pointer;
+}

@@ -2,6 +2,7 @@
 @import "sass/navTop";
 @import "sass/logo";
 @import "sass/tabs";
+@import "sass/search";
 
 /*************************  Reset styles  *************************/
 
@@ -20,8 +21,15 @@ body{
 
 .wrapper{
     max-width: 1200px;
-    padding: 0 20px;
     margin: 0 auto;
+}
+
+.input{
+        padding: 12px 0;
+        padding-left: 10px;
+        width: 100%;
+        max-height: 50px;
+        color: $black;
 }
 
 .background-1{
@@ -29,5 +37,5 @@ body{
 }
 
 .background-2{
-    background: $white;
+    background: $blue;
 }
