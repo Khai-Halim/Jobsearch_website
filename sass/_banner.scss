@@ -1,0 +1,38 @@
+/********************** BANNER **********************/
+
+#bushfire{
+    padding: 22px 0;
+    text-align: center;
+    a{
+        color: $blue;
+    }
+}
+
+#info{
+        font-size: 0.8rem;
+        font-weight: bold;
+        border: 1.5px solid;
+        border-radius: 50%;
+        display: inline-block;
+        padding: 0.5px 6.5px;
+        margin-right: 10px;
+        cursor: default;
+}
+
+#save-searches{
+    padding: 40px 0;
+    text-align: center;
+    a{
+        color: $blue;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+#banner{
+    img{
+        width: 100%;
+    }
+}

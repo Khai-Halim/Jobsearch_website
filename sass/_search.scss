@@ -1,9 +1,10 @@
-
+/************************** SEARCH ********************/
 #search{
     padding: 30px 20px;
     form{  
         display: flex;
         align-items: flex-end;
+        padding: 10px 0;
         span{
             color: $white;
         }
@@ -12,16 +13,19 @@
 
 #keywords{
         flex: 2;
+        margin-right: 4px;
         span{
             font-weight: bold;
         }
-    margin-right: 4px;
+    
 }
 
 #classification{
     flex: 2;
     margin-right: 4px;
     cursor: pointer;
+    display: block;
+    
     option{
         &:first-child{
             display: none;
@@ -37,12 +41,34 @@
 }
 
 .btn-1{
-    flex: 0.5;
-    padding: 12px;
+    width: 100%;
+    padding: 14px;
     background: $pink-2;
     color: $white;
     max-height: 50px;
     font-weight: bold;
     letter-spacing: 0.04rem;
     cursor: pointer;
+    border-radius: 4px;
+    border: none;
 }
+
+#btn-find{
+    flex: 1;
+    margin-left: 4px;
+    text-align: right;
+    
+    a{
+        span{
+            font-size: 0.8rem;
+            font-weight: bold;
+            border: 1.5px solid;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 0.5px 5px;
+            margin-bottom: 6px;
+        }
+        
+    }
+}
+

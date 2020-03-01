@@ -3,6 +3,7 @@
 @import "sass/logo";
 @import "sass/tabs";
 @import "sass/search";
+@import "sass/banner";
 
 /*************************  Reset styles  *************************/
 
@@ -30,6 +31,7 @@ body{
         width: 100%;
         max-height: 50px;
         color: $black;
+        border-radius: 4px;
 }
 
 .background-1{
