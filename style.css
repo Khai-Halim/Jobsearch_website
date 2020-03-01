@@ -114,6 +114,7 @@
 }
 
 #logo img {
+  border-radius: 50%;
   height: 50px;
   margin: 10px;
 }
@@ -257,15 +258,7 @@
 
 .btn-1 {
   width: 100%;
-  padding: 14px;
   background: #e45d74;
-  color: #f3f3f3;
-  max-height: 50px;
-  font-weight: bold;
-  letter-spacing: 0.04rem;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
 }
 
 #btn-find {
@@ -321,8 +314,55 @@
   text-decoration: underline;
 }
 
-#banner img {
+#banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: url("img/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#banner::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  height: 100%;
   width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+#banner p {
+  font-size: 2rem;
+  padding-bottom: 20px;
+  z-index: 10;
+  color: #f3f3f3;
+  text-shadow: -2px 2px 2px #555;
+}
+
+#banner span {
+  color: #e45d74;
+}
+
+#banner button {
+  text-transform: capitalize;
+  background: blue;
+  z-index: 99;
 }
 
 /*************************  Reset styles  *************************/
@@ -353,11 +393,26 @@ body {
   border-radius: 4px;
 }
 
+.btn {
+  padding: 14px;
+  color: #f3f3f3;
+  max-height: 50px;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
 .background-1 {
   background: #f1e4e6;
 }
 
 .background-2 {
   background: blue;
+}
+
+.background-3 {
+  background: #9be99b;
 }
 /*# sourceMappingURL=style.css.map */

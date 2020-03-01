@@ -32,7 +32,43 @@
 }
 
 #banner{
-    img{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 350px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: url("img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    
+    position: relative;
+    &::after{
+        content: "";
+        background: rgba(0, 0, 0, 0.3);
+        height: 100%;
         width: 100%;
+        position: absolute;
+        z-index: 2;
+    }
+    p{
+        font-size: 2rem;
+        padding-bottom: 20px;
+        z-index: 10;
+        color: $white;
+        text-shadow: -2px 2px 2px $black;
+    }
+    span{
+        color: $pink-2;
+        
+    }
+    button{
+        text-transform: capitalize;
+        background: $blue;
+        z-index: 99;
     }
 }
+

@@ -34,10 +34,25 @@ body{
         border-radius: 4px;
 }
 
+.btn{
+    padding: 14px;
+    color: $white;
+    max-height: 50px;
+    font-weight: bold;
+    letter-spacing: 0.04rem;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+}
+
 .background-1{
     background: $pink;
 }
 
 .background-2{
     background: $blue;
+}
+
+.background-3{
+    background: $green;
 }
