@@ -89,6 +89,13 @@
   color: #555;
 }
 
+/*********************** TABLET AND MOBILE VIEW ********************/
+@media (max-width: 800px) {
+  #header-1 {
+    display: none;
+  }
+}
+
 /************************* Logo and sign in section ************/
 #header-2 {
   display: -webkit-box;
@@ -206,6 +213,12 @@
   font-size: 1.1rem;
 }
 
+@media (max-width: 800px) {
+  #tabs {
+    display: none;
+  }
+}
+
 /************************** SEARCH ********************/
 #search {
   padding: 30px 20px;
@@ -287,6 +300,7 @@
 }
 
 /********************** BANNER **********************/
+/* Are you hiring in a bushfire */
 #bushfire {
   padding: 22px 0;
   text-align: center;
@@ -296,6 +310,7 @@
   color: blue;
 }
 
+/* Sign in or Register */
 #info {
   font-size: 0.8rem;
   font-weight: bold;
@@ -356,7 +371,7 @@
 
 #banner p {
   font-size: 2rem;
-  padding-bottom: 20px;
+  padding: 20px;
   z-index: 10;
   color: #f3f3f3;
   text-shadow: -2px 2px 2px #555;
@@ -364,10 +379,14 @@
   letter-spacing: 0.2rem;
 }
 
-#banner span {
+#banner span:first-of-type {
   color: #e45d74;
   font-family: 'Luckiest Guy', sans-serif;
   letter-spacing: 0.2rem;
+}
+
+#banner span:last-of-type {
+  white-space: nowrap;
 }
 
 #banner button {
@@ -380,6 +399,40 @@
   background: #4242da;
 }
 
+#sign-in-mobile {
+  background: yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#sign-in-mobile div:first-of-type {
+  background: blue;
+  height: 100%;
+}
+
+#sign-in-mobile div:last-of-type {
+  background: red;
+}
+
+/******************* TABLET AND MOBILE ********************/
+@media (max-width: 800px) {
+  #banner {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  #save-searches {
+    padding-top: 0;
+  }
+  #save-searches a {
+    color: black;
+    cursor: text;
+  }
+  #save-searches a:hover {
+    text-decoration: none;
+  }
+}
+
 /******************* Footer *********************/
 #footer {
   display: -webkit-box;
@@ -389,6 +442,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 23px 0 23px;
+}
+
+#footer ul {
+  padding-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 #footer ul li {
@@ -406,7 +464,7 @@
 }
 
 #privacy {
-  padding: 50px 23px;
+  padding: 0 23px 50px 23px;
 }
 
 #privacy ul li {
@@ -422,6 +480,25 @@
 
 #privacy ul li a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  #footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer ul {
+    border-bottom: 1px solid #555;
+  }
+  #privacy ul li {
+    display: list-item;
+    padding-bottom: 20px;
+  }
+  #privacy:last-child {
+    padding-bottom: 10px;
+  }
 }
 
 /*************************  Reset styles  *************************/

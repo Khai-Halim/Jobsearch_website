@@ -1,5 +1,6 @@
 /********************** BANNER **********************/
 
+/* Are you hiring in a bushfire */
 #bushfire{
     padding: 22px 0;
     text-align: center;
@@ -8,6 +9,7 @@
     }
 }
 
+/* Sign in or Register */
 #info{
         font-size: 0.8rem;
         font-weight: bold;
@@ -31,8 +33,7 @@
     }
 }
 
-#banner{
-    
+#banner{  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,8 +45,6 @@
     background: url("img/banner.jpg");
     background-size: cover;
     background-position: center;
-    
-    
     position: relative;
     &::after{
         content: "";
@@ -55,20 +54,22 @@
         position: absolute;
         z-index: 2;
     }
-    p{
-        
+    p{    
         font-size: 2rem;
-        padding-bottom: 20px;
+        padding: 20px;
         z-index: 10;
         color: $white;
         text-shadow: -2px 2px 2px $black;
         font-family: 'Luckiest Guy', sans-serif;
         letter-spacing: 0.2rem;
     }
-    span{
+    span:first-of-type{
         color: $pink-2;
         font-family: 'Luckiest Guy', sans-serif;
         letter-spacing: 0.2rem;
+    }
+    span:last-of-type{
+        white-space: nowrap;
     }
     button{
         text-transform: capitalize;
@@ -81,3 +82,33 @@
     }
 }
 
+#sign-in-mobile{
+    background: yellow;
+    display: flex;
+    div:first-of-type{
+        background: blue;
+        height: 100%;
+    }
+    div:last-of-type{
+        background: red;
+    }
+}
+
+/******************* TABLET AND MOBILE ********************/
+
+@media(max-width: 800px){
+    #banner{
+        justify-content: space-around;
+    }
+
+    #save-searches{
+        padding-top: 0;
+        a{
+            color: black;
+            cursor: text;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
