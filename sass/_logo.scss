@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     cursor: pointer;
     img{
         border-radius: 50%;
@@ -25,7 +24,8 @@
     }
 } 
 
-#sign-in{
+/* Sign in or Register */
+#sign-in-block{
     display: inline-block;
     color: $blue;
     span{
@@ -57,5 +57,21 @@
         &:hover{
             text-decoration: underline;
         }
+    }
+}
+
+#mobile-menu{
+    display: none;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media(max-width: 800px){
+    #sign-in-block{
+        display: none;
+    }
+    #mobile-menu{
+        display: initial;
     }
 }

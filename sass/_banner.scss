@@ -83,14 +83,24 @@
 }
 
 #sign-in-mobile{
-    background: yellow;
-    display: flex;
-    div:first-of-type{
-        background: blue;
-        height: 100%;
+    display: none;
+    margin-bottom: 10px;
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
     }
-    div:last-of-type{
-        background: red;
+    
+    a:first-of-type{
+        height: 100%;
+        flex: 1;
+        padding: 40px 0;
+        border-right: 2px solid $pink;
+    }
+    a:last-of-type{
+        flex: 1;
+        padding: 40px 0;
     }
 }
 
@@ -103,12 +113,21 @@
 
     #save-searches{
         padding-top: 0;
-        a{
-            color: black;
-            cursor: text;
-            &:hover{
-                text-decoration: none;
+        padding-bottom: 20px;
+        p{
+            a{
+                color: black;
+                cursor: text;
+                &:hover{
+                    text-decoration: none;
+                }
             }
         }
+        
+    }
+    #sign-in-mobile{
+        display: flex;
     }
 }
+
+

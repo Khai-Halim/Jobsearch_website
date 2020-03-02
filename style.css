@@ -1,3 +1,49 @@
+/************************* Reusable classes ***********************/
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.input {
+  padding: 12px 0;
+  padding-left: 10px;
+  width: 100%;
+  max-height: 50px;
+  color: #555;
+  border-radius: 4px;
+}
+
+.btn {
+  padding: 11px 20px;
+  color: #f3f3f3;
+  max-height: 50px;
+  font-weight: bold;
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.background-1 {
+  background: #f1e4e6;
+}
+
+.background-2 {
+  background: blue;
+}
+
+.background-3 {
+  background: #9be99b;
+}
+
+.background-4 {
+  background: #7c7cd1;
+}
+
 /*********************** Navigation - main - top ***************************/
 #header-1 {
   display: -webkit-box;
@@ -133,12 +179,13 @@
   letter-spacing: 0.05rem;
 }
 
-#sign-in {
+/* Sign in or Register */
+#sign-in-block {
   display: inline-block;
   color: blue;
 }
 
-#sign-in span {
+#sign-in-block span {
   color: #555;
   padding: 0 10px;
 }
@@ -171,6 +218,22 @@
 
 .employer a:hover {
   text-decoration: underline;
+}
+
+#mobile-menu {
+  display: none;
+  padding: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #sign-in-block {
+    display: none;
+  }
+  #mobile-menu {
+    display: initial;
+  }
 }
 
 /********************* TABS *************************/
@@ -299,6 +362,28 @@
   margin-bottom: 6px;
 }
 
+@media (max-width: 800px) {
+  #search {
+    max-width: 450px;
+  }
+  #search form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #search form div {
+    width: 100%;
+  }
+  #search form select {
+    margin-top: 7px;
+    margin-bottom: 20px;
+  }
+  #search form #btn-cont span {
+    display: none;
+  }
+}
+
 /********************** BANNER **********************/
 /* Are you hiring in a bushfire */
 #bushfire {
@@ -400,19 +485,32 @@
 }
 
 #sign-in-mobile {
-  background: yellow;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  margin-bottom: 10px;
 }
 
-#sign-in-mobile div:first-of-type {
-  background: blue;
+#sign-in-mobile a {
+  text-decoration: none;
+}
+
+#sign-in-mobile a:hover {
+  text-decoration: underline;
+}
+
+#sign-in-mobile a:first-of-type {
   height: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 40px 0;
+  border-right: 2px solid #f1e4e6;
 }
 
-#sign-in-mobile div:last-of-type {
-  background: red;
+#sign-in-mobile a:last-of-type {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 40px 0;
 }
 
 /******************* TABLET AND MOBILE ********************/
@@ -423,13 +521,19 @@
   }
   #save-searches {
     padding-top: 0;
+    padding-bottom: 20px;
   }
-  #save-searches a {
+  #save-searches p a {
     color: black;
     cursor: text;
   }
-  #save-searches a:hover {
+  #save-searches p a:hover {
     text-decoration: none;
+  }
+  #sign-in-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -512,51 +616,5 @@
 
 body {
   background: #f3f3f3;
-}
-
-/************************* Reusable classes ***********************/
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.input {
-  padding: 12px 0;
-  padding-left: 10px;
-  width: 100%;
-  max-height: 50px;
-  color: #555;
-  border-radius: 4px;
-}
-
-.btn {
-  padding: 11px 20px;
-  color: #f3f3f3;
-  max-height: 50px;
-  font-weight: bold;
-  letter-spacing: 0.04rem;
-  cursor: pointer;
-  border-radius: 4px;
-  border: none;
-  font-family: sans-serif;
-  font-size: 1rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.background-1 {
-  background: #f1e4e6;
-}
-
-.background-2 {
-  background: blue;
-}
-
-.background-3 {
-  background: #9be99b;
-}
-
-.background-4 {
-  background: #7c7cd1;
 }
 /*# sourceMappingURL=style.css.map */
