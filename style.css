@@ -121,6 +121,9 @@
 
 #logo h1 {
   padding: 15px 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
 }
 
 #sign-in {
@@ -256,12 +259,7 @@
   font-weight: bold;
 }
 
-.btn-1 {
-  width: 100%;
-  background: #e45d74;
-}
-
-#btn-find {
+#btn-cont {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -269,7 +267,16 @@
   text-align: right;
 }
 
-#btn-find a span {
+#btn-cont input {
+  width: 100%;
+  background: #e45d74;
+}
+
+#btn-cont input:hover {
+  background: #e26d81;
+}
+
+#btn-cont a span {
   font-size: 0.8rem;
   font-weight: bold;
   border: 1.5px solid;
@@ -353,16 +360,68 @@
   z-index: 10;
   color: #f3f3f3;
   text-shadow: -2px 2px 2px #555;
+  font-family: 'Luckiest Guy', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 #banner span {
   color: #e45d74;
+  font-family: 'Luckiest Guy', sans-serif;
+  letter-spacing: 0.2rem;
 }
 
 #banner button {
   text-transform: capitalize;
   background: blue;
   z-index: 99;
+}
+
+#banner button:hover {
+  background: #4242da;
+}
+
+/******************* Footer *********************/
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 23px 0 23px;
+}
+
+#footer ul li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+#footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer ul li a:hover {
+  text-decoration: underline;
+}
+
+#privacy {
+  padding: 50px 23px;
+}
+
+#privacy ul li {
+  display: inline-block;
+  list-style: none;
+  padding-right: 20px;
+}
+
+#privacy ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+#privacy ul li a:hover {
+  text-decoration: underline;
 }
 
 /*************************  Reset styles  *************************/
@@ -394,7 +453,7 @@ body {
 }
 
 .btn {
-  padding: 14px;
+  padding: 11px 20px;
   color: #f3f3f3;
   max-height: 50px;
   font-weight: bold;
@@ -402,6 +461,10 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .background-1 {
@@ -414,5 +477,9 @@ body {
 
 .background-3 {
   background: #9be99b;
+}
+
+.background-4 {
+  background: #7c7cd1;
 }
 /*# sourceMappingURL=style.css.map */

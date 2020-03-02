@@ -4,6 +4,7 @@
 @import "sass/tabs";
 @import "sass/search";
 @import "sass/banner";
+@import "sass/footer";
 
 /*************************  Reset styles  *************************/
 
@@ -35,7 +36,7 @@ body{
 }
 
 .btn{
-    padding: 14px;
+    padding: 11px 20px;
     color: $white;
     max-height: 50px;
     font-weight: bold;
@@ -43,6 +44,9 @@ body{
     cursor: pointer;
     border-radius: 4px;
     border: none;
+    font-family: sans-serif;
+    font-size: 1rem;
+    transition: all 0.4s;
 }
 
 .background-1{
@@ -55,4 +59,8 @@ body{
 
 .background-3{
     background: $green;
+}
+
+.background-4{
+    background: $blue-2;
 }

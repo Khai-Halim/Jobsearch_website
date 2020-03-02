@@ -1,0 +1,39 @@
+/******************* Footer *********************/
+
+#footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 23px 0 23px;
+    ul{
+        li{
+            list-style: none;
+            padding-top: 15px;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+#privacy{
+    padding: 50px 23px;
+    ul{
+        li{
+            display: inline-block;
+            list-style: none;
+            padding-right: 20px;
+            a{
+                text-decoration: none;
+                color: black;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+}

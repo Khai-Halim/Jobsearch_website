@@ -45,6 +45,7 @@
     background-size: cover;
     background-position: center;
     
+    
     position: relative;
     &::after{
         content: "";
@@ -55,20 +56,28 @@
         z-index: 2;
     }
     p{
+        
         font-size: 2rem;
         padding-bottom: 20px;
         z-index: 10;
         color: $white;
         text-shadow: -2px 2px 2px $black;
+        font-family: 'Luckiest Guy', sans-serif;
+        letter-spacing: 0.2rem;
     }
     span{
         color: $pink-2;
-        
+        font-family: 'Luckiest Guy', sans-serif;
+        letter-spacing: 0.2rem;
     }
     button{
         text-transform: capitalize;
         background: $blue;
         z-index: 99;
+        
+        &:hover{
+            background: rgb(66, 66, 218);
+        }
     }
 }
 
